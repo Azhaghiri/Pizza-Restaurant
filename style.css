@@ -1,0 +1,251 @@
+body{
+    background-color: black;
+    color: white;
+}
+h1{
+    font-size: 40px;
+    border-bottom: 3px solid red;
+    display: inline-block;
+    position: relative;
+    left: 45%;
+}
+header,ul,li,.icon,i{
+    display: inline;
+}
+header{
+    font-size: 2em;
+    font-weight: 600;
+    position: relative;
+}
+ul{
+    margin-left: 60px;
+}
+li{
+    padding-right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+li:hover{
+    color: white;
+}
+i{
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+}
+i:hover{
+color: white;
+}
+.icon{
+    font-size: 20px;
+    margin-left: 250px;
+}
+.header>img{
+    width: 100%;
+    height: 600px;
+}
+h2{
+position: absolute;
+top: 150px;
+left: 50px;
+font-size: 1.5em;
+width: 200px;
+border-bottom: 2px solid red;
+}
+.header>p{
+    position: absolute;
+    top: 250px;
+    width: 250px;
+    left: 50px;   
+}
+.about-us{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.about-us-content>p{
+    width: 400px;
+    border-top: 3px solid red;
+}
+.about-us-content>img{
+    width: 300px;
+    height: 300px;
+}
+.about-us-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.menu{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.menu-card-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu-card-1>img{
+    margin: 20px;
+    padding: 10px;
+}
+.menu-card-1>p{
+    margin: 20px;
+    padding: 10px;
+    width: 150px;
+}
+.menu-card-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu-card-2>img{
+    margin: 20px;
+    padding: 10px;
+}
+.menu-card-2>p{
+    margin: 20px;
+    padding: 10px;
+    width: 150px;
+}
+.menu-card-3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu-card-3>img{
+    margin: 20px;
+    padding: 10px;
+    width: 190px;
+    height: 190px;
+}
+.menu-card-3>p{
+    margin: 20px;
+    padding: 10px;
+    width: 150px;
+}
+.carousel{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.carousel-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.carousel-content>i{
+    font-size: 40px;
+}
+.dots{
+    display: flex;
+     justify-content: center;
+     padding-top: 20px;
+}
+.dots:hover{
+    cursor: pointer;
+}
+.galary{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.galary-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.find-us{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.find-us-content{
+    display:flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.find-us-content-2{
+    display:flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+        left: 0;
+        text-align: center;
+        border-bottom: 2px solid red;
+    }
+    header {
+        font-size: 1.5em;
+    }
+    ul {
+        margin-left: 0;
+        text-align: center;
+        padding: 0;
+    }
+    li {
+        padding-right: 10px;
+        display:block;
+    }
+    .icon {
+        margin-left: 0;
+        text-align: center;
+        display: block;
+    }
+    .header > img {
+        height: 400px; /* Adjust image height for smaller screens */
+    }
+    h2 {
+        position: static;
+        font-size: 1.2em;
+        width: auto;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .header > p {
+        position: static;
+        width: auto;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .about-us-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us-content > p, .about-us-content > img {
+        width: 90%;
+    }
+    .menu-card-1, .menu-card-2, .menu-card-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-card-1 > img, .menu-card-2 > img, .menu-card-3 > img {
+        width: 60%;
+        height: auto;
+    }
+    .carousel-content {
+        flex-direction: column;
+    }
+    .carousel-content > i {
+        font-size: 30px;
+    }
+    .dots {
+        flex-direction: column;
+    }
+    .galary-img {
+        flex-direction: column;
+    }
+    .find-us-content, .find-us-content-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .find-us-content img, .find-us-content-2 img {
+        width: 100%;
+    }
+    .find-us-content .para1 {
+        width: 90%;
+        text-align: center;
+    }
+}
